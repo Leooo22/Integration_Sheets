@@ -113,7 +113,6 @@ for link in links:
 if all_data:
     print(f"Dados acumulados: {all_data}")
     df = pd.DataFrame(all_data)
-    # caminho_arquivo_excel = 'L:\\Umadeb\\Uploads\\dados_extraidos.xlsx'
     caminho_arquivo_excel = os.getenv('caminho_arquivo_excel')
     if not os.path.exists(os.path.dirname(caminho_arquivo_excel)):
         os.makedirs(os.path.dirname(caminho_arquivo_excel))
